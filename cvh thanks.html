@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankYou - CodersVoice</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        header img {
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: transform 0.5s ease-in-out;
+        }
+        header img:hover {
+            animation: spin 0.5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        header h1 {
+            font-size: 1.8em;
+            color: #444;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        main {
+            text-align: center;
+            animation: slideUp 2s;
+        }
+        @keyframes slideUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        main p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        footer .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #555;
+            font-size: 1.5em;
+        }
+        footer .social-icons a i {
+            transition: color 0.3s, transform 0.3s;
+        }
+        footer .social-icons a:hover i {
+            color: #000;
+            transform: scale(1.2);
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="CodersVoice Logo">
+        <h1>ThankYou from CodersVoice</h1>
+    </header>
+    <main>
+        <p>Thank you for purchasing our digital product!</p>
+        <p>We believe it will bring you great results.</p>
+        <p>Have any questions? Feel free to connect with us:</p>
+    </main>
+    <footer>
+        <p>Follow us on our social media:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100086181562620" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/codersvoice_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/codersvoice" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/hrithik-kumar-singh-0a4127301" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://heylink.me/codersvoicehrithik/" target="_blank"><i class="fas fa-globe"></i></a>
+        </div>
+        <p>&copy; 2024 CodersVoice. All rights reserved.</p>
+    </footer>
+</body>
+</html>
